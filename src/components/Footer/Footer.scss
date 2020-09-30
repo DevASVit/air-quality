@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Helvetica Neue Cyr Thin';
+    src: url('./Font-HNC/HelveticaNeueCyr-Thin.eot');
+    src: url('./Font-HNC/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+    url('./Font-HNC/HelveticaNeueCyr-Thin.woff') format('woff'),
+    url('./Font-HNC/HelveticaNeueCyr-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    border-top: 1px solid #ffffff;
+  
+    &-partners {
+        display: flex;
+        align-items: center;
+
+            &-item {
+                margin-top: -50px;
+                margin-right: 120px;  
+  
+                &:last-child {
+                    margin-right: 0;
+                }
+
+            }
+
+    }
+  
+    &-text-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    &-nav {
+        margin-bottom: 88px;
+        display: flex;
+        flex-direction: column;
+  
+        &-link {
+            margin-bottom: 20px;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 20px;
+            text-decoration: none;
+            color: #ffffff;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+  
+        &-text {
+            width: calc((100% / 3) - 70px);
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: justify;
+            color: #ffffff;
+        }
+
+    }
+    
+    &-text {
+        margin-bottom: 14px;
+        font-family: 'Helvetica Neue Cyr Thin';
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #ffffff;
+    }
+
+}
+
+.text-yellow {
+    color: #EDE852;
+}

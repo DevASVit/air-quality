@@ -1,0 +1,81 @@
+.sectors {
+    padding: 50px 0 153px 0;
+  
+    &-title {
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 41px;
+        text-align: center;
+        color: #ffffff;
+    }
+  
+    &-subtitle {
+        margin: 42px 0;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 27px;
+        text-align: justify;
+        color: #ffffff;
+    }
+ 
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        &-item {
+            margin-bottom: 42px;
+            width: calc((100% / 3) - 70px);
+            height: 240px;
+            position: relative;
+            display: flex;
+            align-items: center;
+           
+            &:hover {
+                background: rgba(0, 0, 0, 0.83);
+            }
+
+        &-name {
+            width: 100%;
+            text-align: center;
+            font-size: 23px;
+            line-height: 30px;
+            color: #222222;
+            background: rgba(255, 255, 255, 0.83);
+        }
+  
+            &-tooltip {
+                position: absolute;
+                left: 80%;
+                width: 400px;
+                pointer-events: none;
+                appearance: none;
+                background-color: #DADADA;
+                padding: 16px 16px 16px 75px;
+                clip-path: polygon(100% 0, 100% 100%, 75px 100%, 0 50%, 75px 0);
+                z-index: 1;
+                text-align: justify;
+                animation: fadeIn 0.4s ease-in-out;
+  
+                &-switched {
+                    left: initial;
+                    right: 90%;
+                    clip-path: polygon(calc(100% - 75px) 0, 100% 50%, calc(100% - 75px) 100%, 0 100%, 0 0);
+                    padding: 16px 75px 16px 16px;
+                }
+            }
+        }
+
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
